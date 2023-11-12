@@ -1,0 +1,65 @@
+.design {
+  background-color: black;
+  background-image: url(../../assets/design-features.jpg);
+  background-size: cover;
+  min-height: 70vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.design .layout {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  height: 100%;
+  width: 100%;
+}
+
+.design .content {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background-color: rgba(15, 116, 143, 0.7);
+  padding: 3rem;
+  color: white;
+}
+
+.design .prop span.icon{
+  display: block;
+  color: #fff;
+  margin-left: 0.8rem;
+  position: relative;
+  width: 2.5rem;
+}
+
+.design .content h1 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+div.prop {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+figure.mobile {
+  position: absolute;
+  bottom: -100px;
+  left: 200px;
+}
+
+@media (max-width: 1110px) {
+  figure.mobile {
+    display: none;
+  }
+
+  .design .content {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,129 @@
+section.serv{
+  min-height: 100vh;
+  background-color: white;
+  padding-top: 2.5rem;
+}
+
+section .container{
+  display: flex;
+  flex-direction: column;
+}
+
+section .heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  margin-top: 0.5rem;
+}
+
+section .heading h1{
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+section .heading h1::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  height: 1px;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section .heading h1::after{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section .heading p{
+  color: #b0acae;
+  font-size: 0.9rem;
+}
+
+section .services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 992px){
+  section .services{
+    flex-direction: column;
+  }
+}
+
+section .services .service{
+  flex: 35%;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  margin-right: 2rem;
+}
+
+
+
+section .services .service .icon{
+  color: black;
+  font-size: 4rem;
+  margin-right: 4.5rem;
+}
+
+section .services .service .text{
+  flex: 70%;
+}
+
+section .services .service .text h3{
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #19c8fa;
+}
+
+section .services .service .text p{
+  color: #b0acae;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px){
+  section .services .service{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  section .services .service .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  section .services .service .icon{
+    margin-right: 0;
+  }
+
+}
+
+

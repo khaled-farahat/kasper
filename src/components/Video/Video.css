@@ -1,0 +1,50 @@
+section.vid {
+  margin-top: 2rem;
+  position: relative;
+}
+
+section.vid video {
+  position: relative;
+  width: 100%;
+}
+
+section.vid video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+section.vid .text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  background-color: rgba(15, 116, 143, 0.7);
+  text-align: center;
+  padding: 1.5rem;
+  color: white;
+  max-height: 100%;
+}
+
+section.vid .text h1{
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+section.vid .text p{
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+section.vid .text button{
+  border: none;
+  background-color: black;
+  padding: 10px 25px;
+  color: white;
+}

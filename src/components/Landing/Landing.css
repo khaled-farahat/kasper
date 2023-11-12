@@ -1,0 +1,100 @@
+.landing {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  background-image: url("../../assets/landing2.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.landing .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+
+.landing .content {
+  background-color: rgba(15, 116, 143, 0.7);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  padding: 1.5rem 1rem;
+}
+
+.content .text {
+  margin-left: 30%;
+  color: white;
+}
+
+.content .text h1 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.content .text p {
+  font-size: 0.65rem;
+  line-height: 1.5;
+}
+
+.landing span.icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 3rem;
+}
+
+.icon.left {
+  left: 20px;
+}
+
+.icon.right {
+  right: 20px;
+}
+
+
+
+@media (max-width: 767px) {
+  .landing span.icon {
+    display: none;
+  }
+
+  .landing .content {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .content .text{
+    width: 100%;
+    margin-left: 0;
+
+  }
+}
+
+.landing .bullets{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.landing .bullets ul{
+  display: flex;
+}
+
+.landing .bullets ul li{
+  /* margin-right: 1rem; */
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.landing .bullets ul li.active{
+  background-color: white;
+}

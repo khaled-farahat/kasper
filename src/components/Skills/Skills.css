@@ -1,0 +1,158 @@
+section.main {
+  margin-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+section.main .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container .testimonials {
+  flex: 50%;
+  margin-right: 50px;
+}
+
+.container .skills {
+  flex: 50%;
+}
+
+section.main .title {
+  text-align: center;
+}
+
+section.main .title h2 {
+  font-weight: normal;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+section.main .title p {
+  font-size: 13px;
+  color: rgba(102, 102, 102, 0.7);
+  margin-bottom: 30px;
+}
+
+.testimonial {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.testimonial figure {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.testimonial figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.testimonial .text {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.testimonial .text p {
+  font-size: 13px;
+  color: black;
+  line-height: 2;
+}
+
+.testimonial .text h3 {
+  font-size: 14px;
+  color: rgba(102, 102, 102, 0.7);
+  text-align: right;
+  font-weight: normal;
+}
+
+section.main .testimonials .bullets {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+section.main .testimonials .bullets ul {
+  display: flex;
+}
+
+section.main .testimonials .bullets ul li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+section.main .testimonials .bullets ul li.active {
+  background-color: black;
+}
+
+section.main .skills .skills-content {
+  display: flex;
+  flex-direction: column;
+}
+
+section.main .skills .skills-content .skill {
+  margin-bottom: 25px;
+}
+
+section.main .skills .skills-content .skill h3 {
+  font-weight: normal;
+  padding-bottom: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+section.main .skills .skills-content .prog-holder {
+  height: 20px;
+  background-color: #dedadc;
+}
+
+section.main .skills .skills-content .prog-holder .prog {
+  height: 100%;
+  background-color: #19c8fa;
+  display: block;
+  position: relative;
+}
+
+section.main .skills .skills-content .prog-holder .prog::before {
+  content: attr(data-progress);
+  position: absolute;
+  top: -30px;
+  right: -13px;
+  font-size: 11px;
+  color: white;
+  background-color: black;
+  padding: 3px 5px;
+}
+
+section.main .skills .skills-content .prog-holder .prog::after {
+  content: "";
+  border-width: 7px;
+  border-color: black transparent transparent transparent;
+  border-style: solid;
+  position: absolute;
+  right: -5px;
+  top: -9px;
+}
+
+@media (max-width: 767px) {
+  section.main .container {
+    flex-direction: column;
+  }
+
+  .container .testimonials {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+  .container .skills {
+    margin-top: 40px;
+  }
+}

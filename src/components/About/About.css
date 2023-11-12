@@ -1,0 +1,115 @@
+
+
+section.about div.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+section.about div.title figure{
+  margin-bottom: -135px;
+  padding-right: 95px;
+}
+
+div.stats{
+  width: 100%;
+  background-color: black;
+  background-image: url(../../assets/stats.png);
+  background-size: cover;
+  position: relative;
+}
+
+div.stats::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+
+section.about div.content{
+  display: flex;
+  background-color: rgba(15, 116, 143, 0.7);
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 40px;
+  padding-left: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+section.about div.pad{
+  padding: 70px 0px;
+}
+
+section.about div.stat{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+section.about div.stat span.icon{
+  width: auto;
+  position: relative;
+  font-size: 20px;
+  margin: 10px;
+  margin-top: 30px;
+}
+
+section.about div.stat span.icon::before{
+  content: "\2B22";
+  color: rgb(106, 104, 104);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 55px;
+  z-index: -1;
+}
+
+section.about div.stat h1{
+  font-size: 50px;
+  margin: 10px 0;
+}
+
+section.about div.stat p{
+  font-size: 12px;
+  text-align: center;
+  margin: 40px 0;
+  margin-top: 10px;
+}
+
+@media (max-width: 767px){
+  section.about div.content{
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  section.about div.stat span.icon{
+    font-size: 50px;
+  }
+
+  section.about div.stat span.icon::before{
+    font-size: 150px;
+  }
+
+  section.about div.stat h1{
+    font-size: 90px;
+  }
+
+  section.about div.stat p{
+    font-size: 20px;
+  }
+
+  section.about div.title figure{
+    display: none;
+  }
+}
+

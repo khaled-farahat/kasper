@@ -1,0 +1,162 @@
+section.port{
+  min-height: 100vh;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+
+section .heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  margin-top: 0.5rem;
+}
+
+section .heading h1{
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+section .heading h1::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  height: 1px;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section .heading h1::after{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section .heading p{
+  color: #b0acae;
+  font-size: 0.9rem;
+}
+
+div.types{
+  /* width: 70%; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+div.types ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.types ul li{
+  list-style: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+div.types ul li:hover{
+  color: white;
+  background-color:  #19c8fa;
+}
+
+.projs{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.projs .proj{
+  position: relative;
+  flex: 25%;
+  transition: all 0.3s ease-in-out;
+}
+
+.projs .proj img{
+  width: 100%;
+  display: block;
+}
+
+.projs .proj figcaption{
+  position: absolute;
+  bottom: -600px;
+  background-color: white;
+  width: 100%;
+  padding: 15px;
+}
+.projs .proj figcaption h1{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.projs .proj figcaption p{
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: #19c8fa;
+}
+
+.projs .proj:hover figcaption{
+  bottom: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.projs .proj{
+  flex: 100%;
+}
+
+@media (min-width:767px){
+  .projs .proj{
+    flex: 50%;
+  }
+}
+
+@media (min-width:992px){
+  .projs .proj{
+    flex: 25%;
+  }
+}
+
+div.more{
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+div.more button{
+  padding: 10px 20px;
+  border: transparent;
+  background-color: #19c8fa;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+div.more button:hover{
+  background-color: rgba(25, 201, 250, 0.803);
+
+}

@@ -1,0 +1,113 @@
+section.prices {
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+section.prices .container {
+  display: flex;
+  flex-direction: column;
+}
+
+section.prices .container .data {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+section.prices .container .data .price {
+  flex: 25%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+section.prices .container .data .price:not(:last-child) {
+  margin-right: 20px;
+}
+
+section.prices .container .data .price .price-data {
+  border-bottom: 1px solid #19c8fa;
+  border-top: 1px solid #19c8fa;
+}
+
+section.prices .container .data .price .price-data h2 {
+  font-weight: lighter;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section.prices .container .data .price .price-data h1 {
+  font-size: 50px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  width: fit-content;
+}
+
+section.prices .container .data .price .price-data h1::before {
+  content: "$";
+  position: absolute;
+  font-size: 17px;
+  top: 12px;
+  left: -15px;
+}
+
+section.prices .container .data .price .price-data h1::after {
+  content: "/mo";
+  position: absolute;
+  bottom: 10px;
+  right: -40px;
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+section.prices .container .data .price li {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: fit-content;
+  margin-left: auto;
+  padding-left: 20px;
+  margin-right: auto;
+  padding-right: 20px;
+}
+
+section.prices .container .data .price li:not(:last-child) {
+  border-bottom: 1px solid #19c8fa;
+}
+
+section.prices .container .data .price .buy {
+  border-top: 1px solid #19c8fa;
+  padding-top: 30px;
+}
+
+@media (max-width: 767px) {
+  section.prices .container .data {
+    flex-direction: column;
+  }
+}
+
+section.prices .container .contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+section.prices .container .contact-us p {
+  margin-bottom: 30px;
+}
+section.prices .container .contact-us button{
+  width:150px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #19c8fa;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+section.prices .container .contact-us button:hover{
+  background-color: rgba(25, 201, 250, 0.704);
+}

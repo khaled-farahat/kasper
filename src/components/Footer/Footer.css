@@ -1,0 +1,44 @@
+footer{
+  background-color: black;
+}
+
+footer .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+footer .content{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+footer .content figure{
+  margin-bottom: 30px;
+}
+
+footer .content p.para{
+  font-size: 22px;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+footer .social{
+  margin-bottom: 55px;
+}
+
+footer a{
+  color: white;
+  padding: 10px;
+}
+
+footer p.copy-right span{
+  color: #19c8fa;
+}

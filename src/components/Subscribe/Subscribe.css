@@ -1,0 +1,91 @@
+section.subscribe {
+  background-color: black;
+  background-image: url("../../assets/subscribe.jpg");
+  background-size: cover;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+section.subscribe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+section.subscribe .container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+section.subscribe .container .input {
+  flex: 55%;
+  display: flex;
+  z-index: 1;
+  border: 1px solid white;
+  margin-right: 20px;
+  min-height: 50px;
+  margin-bottom: 20px;
+}
+
+
+
+
+section.subscribe .container .input input {
+  flex: 40%;
+  position: relative;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+section.subscribe .container .input input::placeholder {
+  color: white;
+  text-transform: uppercase;
+}
+
+section.subscribe .container .input button {
+  padding: 10px 20px;
+  background-color: #19c8fa;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+section.subscribe .container .input .env {
+  position: absolute;
+  top: 50%;
+  left: 55px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 20px;
+}
+
+section.subscribe .container p {
+  flex: 40%;
+  z-index: 1;
+  color: white;
+  font-size: 13px;
+}
+
+@media (max-width:992px ) {
+  section.subscribe .container{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section.subscribe .container .input{
+    flex: 90%;
+    margin-right: 0;
+  }
+
+  section.subscribe .container .input input{
+    flex: 95%;
+  }
+}
