@@ -1,4 +1,4 @@
-<img src="./screenshots/logo.png" width="60%"/>
+<h1 align="center"><span style="display:flex; justify-content:center; align-items:center;"><img src="./screenshots/kasper-logo.png" width="40" height="50"/>&nbsp;Kasper</span></h1>
 
 ## Live Demo
 
